@@ -1,0 +1,20 @@
+{
+  "name": "madlib-template-parser",
+  "version": "0.1.0",
+  "description": "A minimal parser for Mad Libs templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonaldKellett/madlib-template-parser.git"
+  },
+  "keywords": [],
+  "author": "Donald Sebastian Leung",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/DonaldKellett/madlib-template-parser/issues"
+  },
+  "homepage": "https://github.com/DonaldKellett/madlib-template-parser#readme"
+}
