@@ -19,5 +19,6 @@
   "homepage": "https://github.com/DonaldKellett/madlib-template-parser#readme",
   "devDependencies": {
     "tap": "^14.10.8"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
