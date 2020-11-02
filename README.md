@@ -46,14 +46,14 @@ mtp("The   <descriptiveAdjective>  brown <singularNoun> <simplePastVerb> over th
   [
     [
       { type: 'text', text: 'The' },
-      { type: 'blank', class: 'adjective', variant: 'descriptive' },
+      { type: 'blank', category: 'adjective', variant: 'descriptive' },
       { type: 'text', text: 'brown' },
-      { type: 'blank', class: 'noun', variant: 'singular' },
-      { type: 'blank', class: 'verb', variant: 'simple past' },
+      { type: 'blank', category: 'noun', variant: 'singular' },
+      { type: 'blank', category: 'verb', variant: 'simple past' },
       { type: 'text', text: 'over' },
       { type: 'text', text: 'the' },
       { type: 'text', text: 'lazy' },
-      { type: 'blank', class: 'noun', variant: 'singular' },
+      { type: 'blank', category: 'noun', variant: 'singular' },
       { type: 'text', text: 'and' },
       { type: 'text', text: 'shouted,' }
     ],
