@@ -1,10 +1,10 @@
-# madlib-template-parser
+# madlibs-template-parser
 
 A minimal parser for Mad Libs templates
 
 ## Features
 
-Support is planned for the following types of English words as blanks:
+The following types of English words are supported as blanks:
 
 - Nouns
   - Singular (e.g. boy, country, bridge, city)
@@ -33,7 +33,7 @@ Support is planned for the following types of English words as blanks:
 Pass in a piece of English text with certain words replaced with blanks of the appropriate type (delimited by `<` and `>`) to obtain a parse as an array, where each subarray denotes a paragraph and each object in each subarray denotes a word (roughly) or blank of a given type:
 
 ```javascript
-const mtp = require('madlib-template-parser')
+const mtp = require('madlibs-template-parser')
 
 mtp("The   <descriptiveAdjective>  brown <singularNoun> <simplePastVerb> over the lazy <singularNoun> and shouted,\r\n\r\n\"That was easy!\"")
 
