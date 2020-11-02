@@ -63,7 +63,7 @@ mtp("The   <descriptiveAdjective>  brown <singularNoun> <simplePastVerb> over th
       { type: 'text', text: 'easy!"' }
     ]
   ]
-/*
+*/
 ```
 
 ## License
