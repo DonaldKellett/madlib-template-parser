@@ -4,7 +4,7 @@
   "description": "A minimal parser for Mad Libs templates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DonaldKellett/madlib-template-parser/issues"
   },
-  "homepage": "https://github.com/DonaldKellett/madlib-template-parser#readme"
+  "homepage": "https://github.com/DonaldKellett/madlib-template-parser#readme",
+  "devDependencies": {
+    "tap": "^14.10.8"
+  }
 }
