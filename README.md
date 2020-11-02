@@ -39,42 +39,31 @@ Example of using the framework (once complete):
 ```javascript
 const mtp = require('madlib-template-parser')
 
-mtp("The   <descriptiveAdjective>  brown <singularNoun> <simplePastVerb> over the lazy <singularNoun> and shouted, \"That was easy!\"")
+mtp("The   <descriptiveAdjective>  brown <singularNoun> <simplePastVerb> over the lazy <singularNoun> and shouted,\r\n\r\n\"That was easy!\"")
 
 // Output:
-// [
-//   { type: 'word', text: 'The' },
-//   { type: 'space' },
-//   { type: 'blank', class: 'adjective', variant: 'descriptive' },
-//   { type: 'space' },
-//   { type: 'word', text: 'brown' },
-//   { type: 'space' },
-//   { type: 'blank', class: 'noun', variant: 'singular' },
-//   { type: 'space' },
-//   { type: 'blank', class: 'verb', variant: 'simple past' },
-//   { type: 'space' },
-//   { type: 'word', text: 'over' },
-//   { type: 'space' },
-//   { type: 'word', text: 'the' },
-//   { type: 'space' },
-//   { type: 'word', text: 'lazy' },
-//   { type: 'space' },
-//   { type: 'blank', class: 'noun', variant: 'singular' },
-//   { type: 'space' },
-//   { type: 'word', text: 'and' },
-//   { type: 'space' },
-//   { type: 'word', text: 'shouted' },
-//   { type: 'punctuation', text: ',' },
-//   { type: 'space' },
-//   { type: 'punctuation', text: '"' },
-//   { type: 'word', text: 'That' },
-//   { type: 'space' },
-//   { type: 'word', text: 'was' },
-//   { type: 'space' },
-//   { type: 'word', text: 'easy' },
-//   { type: 'punctuation', text: '!' },
-//   { type: 'punctuation', text: '"' }
-// ]
+/*
+  [
+    [
+      { type: 'text', text: 'The' },
+      { type: 'blank', class: 'adjective', variant: 'descriptive' },
+      { type: 'text', text: 'brown' },
+      { type: 'blank', class: 'noun', variant: 'singular' },
+      { type: 'blank', class: 'verb', variant: 'simple past' },
+      { type: 'text', text: 'over' },
+      { type: 'text', text: 'the' },
+      { type: 'text', text: 'lazy' },
+      { type: 'blank', class: 'noun', variant: 'singular' },
+      { type: 'text', text: 'and' },
+      { type: 'text', text: 'shouted,' }
+    ],
+    [
+      { type: 'text', text: '"That' },
+      { type: 'text', text: 'was' },
+      { type: 'text', text: 'easy!"' }
+    ]
+  ]
+/*
 ```
 
 ## License
