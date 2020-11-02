@@ -2,11 +2,7 @@
 
 A minimal parser for Mad Libs templates
 
-## Progress
-
-Work in progress
-
-## Planned features
+## Features
 
 Support is planned for the following types of English words as blanks:
 
@@ -32,9 +28,9 @@ Support is planned for the following types of English words as blanks:
   - Place (e.g. above, below, under, within)
   - Time (e.g. yesterday, tomorrow, monthly, daily, recently)
 
-## Example
+## Usage
 
-Example of using the framework (once complete):
+Pass in a piece of English text with certain words replaced with blanks of the appropriate type (delimited by `<` and `>`) to obtain a parse as an array, where each subarray denotes a paragraph and each object in each subarray denotes a word (roughly) or blank of a given type:
 
 ```javascript
 const mtp = require('madlib-template-parser')
@@ -65,6 +61,26 @@ mtp("The   <descriptiveAdjective>  brown <singularNoun> <simplePastVerb> over th
   ]
 */
 ```
+
+Supported blanks are:
+
+- `<singularNoun>`: Noun (singular)
+- `<pluralNoun>`: Noun (plural)
+- `<properNoun>`: Noun (proper)
+- `<collectiveNoun>`: Noun (collective)
+- `<rootVerb>`: Verb (root)
+- `<thirdPersonSingularVerb>`: Verb (third person singular)
+- `<presentParticipleVerb>`: Verb (present participle)
+- `<simplePastVerb>`: Verb (simple past)
+- `<pastParticipleVerb>`: Verb (past participle)
+- `<descriptiveAdjective>`: Adjective (descriptive)
+- `<quantitativeAdjective>`: Adjective (quantitative)
+- `<properAdjective>`: Adjective (proper)
+- `<degreeAdverb>`: Adverb (degree)
+- `<frequencyAdverb>`: Adverb (frequency)
+- `<mannerAdverb>`: Adverb (manner)
+- `<placeAdverb>`: Adverb (place)
+- `<timeAdverb>`: Adverb (time)
 
 ## License
 
