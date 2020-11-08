@@ -31,7 +31,6 @@ module.exports = template => {
     'placeAdverb': { category: 'adverb', variant: 'place' },
     'timeAdverb': { category: 'adverb', variant: 'time' }
   }
-  console.log(WHITESPACE.includes(' '))
   while (cond()) {
     if (template[i] === '<') {
       let j = ++i
